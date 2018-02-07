@@ -1,0 +1,8 @@
+name: windows-spectre-meltdown
+title: Windows Spectre/Meltdown Profile
+maintainer: Barney Sowood
+copyright: Barney Sowood
+copyright_email: barney@sowood.co.uk
+license: Apache-2.0
+summary: Compliance profile for Windows Spectre and Meltdown issuese
+version: 0.1.0
