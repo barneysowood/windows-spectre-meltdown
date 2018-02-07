@@ -10,6 +10,7 @@ Without this Windows updates with Spectre and
 Meltdown fixes will not install
 '
   describe registry_key('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\QualityCompat') do
-   its('cadca5fe-87d3-4b96-b7fb-a231484277cc') { should cmp 0 }
+    it { should exist }
+    it { should have_property_value('cadca5fe-87d3-4b96-b7fb-a231484277cc', :type_dword, 0) }
   end
 end
